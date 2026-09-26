@@ -1,0 +1,583 @@
+/* Prevent horizontal scrolling */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* ==================================================
+   CAFE ADDA - CUSTOM CSS
+================================================== */
+
+
+/* GLOBAL */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212529;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-size: 1.35rem;
+    letter-spacing: 0.3px;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    margin-left: 8px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ffc107 !important;
+}
+
+
+/* DARK MODE BUTTON */
+
+.dark-toggle {
+    width: 42px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+
+/* HERO */
+
+.hero-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("../assets/durga-puja-thali.jpg")
+        center / cover no-repeat;
+}
+
+.hero-section h1 {
+    line-height: 1.15;
+}
+
+.hero-section h1 span {
+    color: #ffc107;
+}
+
+.hero-section p {
+    max-width: 650px;
+}
+
+
+/* PUJA */
+
+.puja-section {
+    background: #fff8e1;
+}
+
+.puja-section img {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+}
+
+
+/* ABOUT */
+
+#about img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+}
+
+
+/* SIGNATURE MENU */
+
+.menu-card {
+    border: none;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.menu-card .card-body {
+    padding: 1.4rem;
+}
+
+.menu-price {
+    color: #b91c1c;
+    font-size: 1.15rem;
+}
+
+
+/* SIGNATURE BADGE */
+
+.signature-badge {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    background: #b91c1c;
+    color: white;
+
+    padding: 7px 13px;
+
+    border-radius: 50px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* FULL MENU */
+
+.full-menu {
+    border-top: 2px solid #eeeeee;
+}
+
+.menu-category {
+    background: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.menu-category h3 {
+    color: #8f1d1d;
+
+    font-size: 1.25rem;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.menu-category h3 i {
+    color: #d49a00;
+    margin-right: 8px;
+}
+
+.menu-line {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    gap: 15px;
+
+    padding: 9px 0;
+
+    border-bottom: 1px dotted #cccccc;
+}
+
+.menu-line:last-child {
+    border-bottom: none;
+}
+
+.menu-line span {
+    color: #444444;
+}
+
+.menu-line strong {
+    color: #8f1d1d;
+    white-space: nowrap;
+}
+
+
+/* GALLERY */
+
+.gallery-btn {
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.75rem;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+
+    transition:
+        transform 0.4s ease;
+}
+
+.gallery-btn:hover .gallery-image {
+    transform: scale(1.06);
+}
+
+.gallery-btn:focus {
+    outline: 3px solid #ffc107;
+    outline-offset: 3px;
+}
+
+
+/* TESTIMONIALS */
+
+#testimonialCarousel {
+    padding: 0 55px;
+}
+
+#testimonialCarousel .carousel-item {
+    min-height: 250px;
+}
+
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+    width: 50px;
+}
+
+
+/* CONTACT */
+
+#contact .card {
+    border-radius: 18px;
+}
+
+#contact .form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+}
+
+#contact .form-control:focus {
+    border-color: #ffc107;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(255, 193, 7, 0.2);
+}
+
+
+/* BUTTONS */
+
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn-warning {
+    color: #212529;
+}
+
+.btn-warning:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* FOOTER */
+
+footer a {
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc107 !important;
+}
+
+
+/* ACCESSIBILITY */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #ffc107;
+    outline-offset: 3px;
+}
+
+
+/* ==================================================
+   DARK MODE
+================================================== */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #eeeeee;
+}
+
+
+/* Light backgrounds */
+
+body.dark-mode .bg-light {
+    background-color: #181818 !important;
+}
+
+
+/* Muted text */
+
+body.dark-mode .text-muted {
+    color: #b8b8b8 !important;
+}
+
+
+/* Cards */
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #eeeeee;
+}
+
+
+/* Menu categories */
+
+body.dark-mode .menu-category {
+    background-color: #1e1e1e;
+    color: #eeeeee;
+}
+
+
+/* Menu text */
+
+body.dark-mode .menu-line {
+    border-bottom-color: #444444;
+}
+
+body.dark-mode .menu-line span {
+    color: #dddddd;
+}
+
+
+/* Full menu */
+
+body.dark-mode .full-menu {
+    border-top-color: #444444;
+}
+
+
+/* Puja section */
+
+body.dark-mode .puja-section {
+    background-color: #211d10;
+}
+
+
+/* Reviews */
+
+body.dark-mode #reviews {
+    background-color: #181818 !important;
+}
+
+
+/* Navbar */
+
+body.dark-mode .navbar {
+    background-color: #080808 !important;
+}
+
+
+/* Form */
+
+body.dark-mode #contact .form-control {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+body.dark-mode #contact .form-control::placeholder {
+    color: #aaaaaa;
+}
+
+body.dark-mode #contact .form-control:focus {
+    border-color: #ffc107;
+}
+
+
+/* Modal */
+
+body.dark-mode .modal-content {
+    background-color: #111111 !important;
+}
+
+
+/* Footer */
+
+body.dark-mode footer {
+    background-color: #080808 !important;
+}
+
+
+/* DARK MODE TOGGLE */
+
+#darkModeToggle {
+    transition: 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 991.98px) {
+
+    .navbar .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .dark-toggle {
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+    .hero-section {
+        min-height: 85vh;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 767.98px) {
+
+    .hero-section {
+        min-height: 80vh;
+        text-align: center;
+    }
+
+    .hero-section .d-flex {
+        justify-content: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.35rem;
+    }
+
+    .hero-section p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gallery-image {
+        height: 220px;
+    }
+
+    #testimonialCarousel {
+        padding: 0 25px;
+    }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 575.98px) {
+
+    .hero-section {
+        min-height: 78vh;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .btn {
+        width: 100%;
+    }
+
+    .menu-card img {
+        height: 220px;
+    }
+
+    .gallery-image {
+        height: 200px;
+    }
+
+    .menu-category {
+        padding: 20px;
+    }
+
+    .menu-line {
+        font-size: 0.92rem;
+    }
+
+    #testimonialCarousel {
+        padding: 0;
+    }
+
+}
