@@ -167,38 +167,25 @@ Open the `index.html` file in a modern web browser.
 ## Screenshots
 
 ### Home Page
-
-![Home Page](screenshots/home.png)
-
-### About Section
-
-![About Section](screenshots/about.png)
+![Home Page](home.png)
 
 ### Signature Menu
-
-![Signature Menu](screenshots/signature-menu.png)
+![Signature Menu](signature-menu.png)
 
 ### Full Menu
-
-![Full Menu](screenshots/full-menu.png)
+![Full Menu](full-menu.png)
 
 ### Gallery
-
-![Gallery](screenshots/gallery.png)
+![Gallery](gallery.png)
 
 ### Reviews
-
-![Reviews](screenshots/reviews.png)
+![Reviews](reviews.png)
 
 ### Contact Section
-
-![Contact Section](screenshots/contact.png)
+![Contact Section](contact.png)
 
 ### Dark Mode
-
-![Dark Mode](screenshots/dark-mode.png)
-
----
+![Dark Mode](dark-mode.png)
 
 ## Restaurant Information
 
