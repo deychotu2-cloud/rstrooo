@@ -2,213 +2,129 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cafe Adda | Authentic Bengali Food</title>
-
     <meta name="description"
-        content="Cafe Adda - Authentic Bengali food, traditional recipes and Durga Puja special dishes in Bardhaman, West Bengal.">
-
-    <meta name="keywords"
-        content="Cafe Adda, Bengali food, Bengali restaurant, Durga Puja food, Bardhaman restaurant">
+        content="Cafe Adda - A Bengali restaurant serving authentic Bengali food and festive Durga Puja specials.">
 
     <meta name="author" content="Cafe Adda">
 
-    <!-- Open Graph -->
+    <meta property="og:title" content="Cafe Adda - Bengali Restaurant">
+    <meta property="og:description" content="A festive taste of Bengal, made with love.">
 
-    <meta property="og:title"
-        content="Cafe Adda | Authentic Bengali Food">
-
-    <meta property="og:description"
-        content="A festive feast of Bengal, made with love.">
-
-    <meta property="og:type"
-        content="website">
-
+    <title>Cafe Adda | Bengali Restaurant</title>
 
     <!-- Bootstrap CSS -->
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
-
     <!-- Bootstrap Icons -->
-
-    <link
-        rel="stylesheet"
+    <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
     <!-- Custom CSS -->
-
     <link rel="stylesheet" href="css/custom.css">
-
 </head>
-
 
 <body>
 
+    <!-- ================= NAVBAR ================= -->
 
-<!-- ==================================================
-     NAVBAR
-================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand fw-bold" href="#home">
+                Cafe Adda
+            </a>
 
-    <div class="container">
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a class="navbar-brand fw-bold" href="#home">
+            <div class="collapse navbar-collapse" id="navbarNav">
 
-            <i class="bi bi-cup-hot-fill me-2"></i>
+                <ul class="navbar-nav ms-auto align-items-lg-center">
 
-            Cafe Adda
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
 
-        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
 
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
 
-            <span class="navbar-toggler-icon"></span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
 
-        </button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
 
+                    <!-- DARK MODE -->
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <button id="darkModeToggle"
+                            class="btn btn-outline-light"
+                            type="button"
+                            aria-label="Toggle dark mode">
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
+                            <i class="bi bi-moon-fill"></i>
 
-            <ul class="navbar-nav ms-auto align-items-lg-center">
+                        </button>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">
-                        Home
-                    </a>
-                </li>
+                </ul>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">
-                        About
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#menu">
-                        Menu
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#gallery">
-                        Gallery
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#reviews">
-                        Reviews
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">
-                        Contact
-                    </a>
-                </li>
-
-                <!-- DARK MODE -->
-
-                <li class="nav-item ms-lg-2">
-
-                    <button
-                        id="darkModeToggle"
-                        class="btn btn-outline-light dark-toggle"
-                        type="button"
-                        aria-label="Toggle dark mode"
-                        title="Toggle dark mode">
-
-                        <i class="bi bi-moon-fill"></i>
-
-                    </button>
-
-                </li>
-
-            </ul>
-
+            </div>
         </div>
-
-    </div>
-
-</nav>
+    </nav>
 
 
+    <!-- ================= HERO ================= -->
 
-<!-- ==================================================
-     HERO
-================================================== -->
+    <header id="home" class="hero-section">
 
-<header id="home" class="hero-section">
+        <div class="container">
 
-    <div class="container">
+            <div class="row align-items-center min-vh-100">
 
-        <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7 text-center text-lg-start">
 
-            <div class="col-lg-7 text-white">
+                    <span class="badge bg-warning text-dark mb-3">
+                        Authentic Bengali Cuisine
+                    </span>
 
-                <p class="text-uppercase fw-bold mb-2">
+                    <h1 class="display-3 fw-bold">
+                        Welcome to Cafe Adda
+                    </h1>
 
-                    Welcome to Cafe Adda
+                    <p class="lead">
+                        A festive taste of Bengal, made with love.
+                    </p>
 
-                </p>
+                    <div class="mt-4">
 
+                        <a href="#contact" class="btn btn-warning btn-lg me-2">
+                            Reserve Table
+                        </a>
 
-                <h1 class="display-3 fw-bold">
+                        <a href="#menu" class="btn btn-outline-light btn-lg">
+                            View Menu
+                        </a>
 
-                    The Taste of Bengal,
-
-                    <span>Made With Love.</span>
-
-                </h1>
-
-
-                <p class="lead my-4">
-
-                    Authentic Bengali flavours, traditional recipes
-                    and the warmth of a true adda.
-
-                </p>
-
-
-                <div class="d-flex flex-wrap gap-3">
-
-                    <a
-                        href="#contact"
-                        class="btn btn-warning btn-lg">
-
-                        <i class="bi bi-calendar-check me-2"></i>
-
-                        Reserve Table
-
-                    </a>
-
-
-                    <a
-                        href="#menu"
-                        class="btn btn-outline-light btn-lg">
-
-                        <i class="bi bi-journal-text me-2"></i>
-
-                        View Menu
-
-                    </a>
+                    </div>
 
                 </div>
 
@@ -216,525 +132,367 @@
 
         </div>
 
-    </div>
+    </header>
 
-</header>
 
+    <!-- ================= DURGA PUJA SPECIAL ================= -->
 
+    <section class="puja-section py-5">
 
-<!-- ==================================================
-     DURGA PUJA SPECIAL
-================================================== -->
+        <div class="container text-center">
 
-<section class="py-5 puja-section">
-
-    <div class="container">
-
-        <div class="row align-items-center g-4">
-
-
-            <div class="col-lg-6">
-
-                <span class="badge bg-danger mb-3">
-
-                    Durga Puja Special ✨
-
-                </span>
-
-
-                <h2 class="fw-bold">
-
-                    A festive feast of Bengal,
-                    made with love.
-
-                </h2>
-
-
-                <p class="lead">
-
-                    Celebrate the spirit of Durga Puja with
-                    traditional Bengali flavours at Cafe Adda.
-
-                </p>
-
-
-                <a
-                    href="#menu"
-                    class="btn btn-dark">
-
-                    Explore Special Menu
-
-                </a>
-
-            </div>
-
-
-            <div class="col-lg-6">
-
-                <img
-                    src="assets/durga-puja-thali.jpg"
-                    class="img-fluid rounded-4 shadow"
-                    alt="Traditional Bengali Durga Puja special thali">
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     ABOUT
-================================================== -->
-
-<section id="about" class="py-5">
-
-    <div class="container">
-
-        <div class="row align-items-center g-5">
-
-
-            <div class="col-lg-6">
-
-                <img
-                    src="assets/durga-puja-thali.jpg"
-                    class="img-fluid rounded-4 shadow"
-                    alt="Traditional Bengali food served at Cafe Adda">
-
-            </div>
-
-
-            <div class="col-lg-6">
-
-                <p class="text-uppercase fw-bold text-warning">
-
-                    Our Story
-
-                </p>
-
-
-                <h2 class="display-6 fw-bold">
-
-                    A Little Place With
-                    A Big Bengali Heart
-
-                </h2>
-
-
-                <p>
-
-                    Cafe Adda was created with a simple idea —
-                    to bring the authentic taste of Bengal to
-                    every table.
-
-                </p>
-
-
-                <p>
-
-                    From traditional Bengali recipes to festive
-                    favourites, every dish is prepared with
-                    carefully selected ingredients and plenty of love.
-
-                </p>
-
-
-                <p>
-
-                    Come sit with us, enjoy good food and
-                    have a little adda.
-
-                </p>
-
-
-                <a
-                    href="#contact"
-                    class="btn btn-dark">
-
-                    Visit Cafe Adda
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     MENU
-================================================== -->
-
-<section id="menu" class="py-5 bg-light">
-
-    <div class="container">
-
-
-        <!-- SIGNATURE -->
-
-        <div class="text-center mb-5">
-
-            <span class="badge bg-danger px-3 py-2 mb-3">
-
-                ⭐ Chef's Signature
-
+            <span class="badge bg-danger mb-3">
+                Durga Puja Special ✨
             </span>
 
-
-            <p class="text-uppercase fw-bold text-warning mb-2">
-
-                Our Specialities
-
-            </p>
-
-
-            <h2 class="display-6 fw-bold">
-
-                Signature Bengali Favourites
-
+            <h2 class="fw-bold">
+                A festive feast of Bengal, made with love.
             </h2>
 
-
-            <p class="text-muted">
-
-                Our carefully selected signature dishes,
-                prepared with authentic Bengali flavours.
-
+            <p class="mb-4">
+                Celebrate Durga Puja with authentic Bengali flavours,
+                traditional recipes and delicious festive dishes.
             </p>
 
+            <a href="#menu" class="btn btn-dark">
+                Explore Special Menu
+            </a>
+
         </div>
 
+    </section>
 
-        <div class="row g-4 mb-5">
 
+    <!-- ================= ABOUT ================= -->
 
-            <!-- 1 -->
+    <section id="about" class="py-5">
 
-            <div class="col-md-6 col-lg-4">
+        <div class="container">
 
-                <article class="card menu-card h-100 shadow-sm">
+            <div class="row align-items-center g-4">
 
-                    <div class="position-relative">
+                <div class="col-lg-6">
 
-                        <img
-                            src="assets/durga-puja-thali.jpg"
-                            class="card-img-top"
-                            alt="Durga Puja Special Bengali Thali">
+                    <img src="assets/durga-puja-thali.jpg"
+                        class="img-fluid rounded shadow"
+                        alt="Traditional Bengali food at Cafe Adda">
 
-                        <span class="signature-badge">
-                            ★ Signature
-                        </span>
+                </div>
 
-                    </div>
+                <div class="col-lg-6">
 
+                    <span class="section-label">
+                        About Us
+                    </span>
 
-                    <div class="card-body">
+                    <h2 class="fw-bold mt-2">
+                        The Taste of Bengal
+                    </h2>
 
-                        <h3 class="h5 fw-bold">
-                            Durga Puja Special Thali
-                        </h3>
+                    <p>
+                        Cafe Adda is a Bengali restaurant inspired by
+                        the traditional flavours of West Bengal.
+                    </p>
 
-                        <p class="text-muted">
-                            A festive Bengali thali packed with
-                            traditional flavours.
-                        </p>
+                    <p>
+                        From delicious chicken dishes to traditional
+                        Bengali sweets, every dish is prepared with
+                        care and authentic flavours.
+                    </p>
 
-                        <strong class="menu-price">
-                            ₹399
-                        </strong>
+                    <p>
+                        Our goal is simple — good food, warm hospitality
+                        and a place where everyone can enjoy a true
+                        Bengali food experience.
+                    </p>
 
-                    </div>
-
-                </article>
-
-            </div>
-
-
-
-            <!-- 2 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <article class="card menu-card h-100 shadow-sm">
-
-                    <div class="position-relative">
-
-                        <img
-                            src="assets/chicken-saate.jpg"
-                            class="card-img-top"
-                            alt="Chicken Saate">
-
-                        <span class="signature-badge">
-                            ★ Signature
-                        </span>
-
-                    </div>
-
-
-                    <div class="card-body">
-
-                        <h3 class="h5 fw-bold">
-                            Chicken Saate
-                        </h3>
-
-                        <p class="text-muted">
-                            Juicy marinated chicken with
-                            Bengali-inspired flavours.
-                        </p>
-
-                        <strong class="menu-price">
-                            ₹249
-                        </strong>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-
-
-            <!-- 3 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <article class="card menu-card h-100 shadow-sm">
-
-                    <div class="position-relative">
-
-                        <img
-                            src="assets/doi-bora.jpg"
-                            class="card-img-top"
-                            alt="Traditional Bengali Doi Bora">
-
-                        <span class="signature-badge">
-                            ★ Signature
-                        </span>
-
-                    </div>
-
-
-                    <div class="card-body">
-
-                        <h3 class="h5 fw-bold">
-                            Doi Bora
-                        </h3>
-
-                        <p class="text-muted">
-                            Soft bora covered with creamy yoghurt
-                            and traditional spices.
-                        </p>
-
-                        <strong class="menu-price">
-                            ₹149
-                        </strong>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-
-
-            <!-- 4 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <article class="card menu-card h-100 shadow-sm">
-
-                    <div class="position-relative">
-
-                        <img
-                            src="assets/chicken-singara.jpg"
-                            class="card-img-top"
-                            alt="Crispy Bengali Chicken Singara">
-
-                        <span class="signature-badge">
-                            ★ Signature
-                        </span>
-
-                    </div>
-
-
-                    <div class="card-body">
-
-                        <h3 class="h5 fw-bold">
-                            Chicken Singara
-                        </h3>
-
-                        <p class="text-muted">
-                            Crispy golden singara filled with
-                            delicious spiced chicken.
-                        </p>
-
-                        <strong class="menu-price">
-                            ₹129
-                        </strong>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-
-
-            <!-- 5 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <article class="card menu-card h-100 shadow-sm">
-
-                    <div class="position-relative">
-
-                        <img
-                            src="assets/chicken-kosha.jpg"
-                            class="card-img-top"
-                            alt="Bengali Chicken Kosha">
-
-                        <span class="signature-badge">
-                            ★ Signature
-                        </span>
-
-                    </div>
-
-
-                    <div class="card-body">
-
-                        <h3 class="h5 fw-bold">
-                            Chicken Kosha
-                        </h3>
-
-                        <p class="text-muted">
-                            Slow-cooked Bengali chicken curry
-                            with rich aromatic spices.
-                        </p>
-
-                        <strong class="menu-price">
-                            ₹299
-                        </strong>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-
-
-            <!-- 6 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <article class="card menu-card h-100 shadow-sm">
-
-                    <div class="position-relative">
-
-                        <img
-                            src="assets/fish-pakoda.jpg"
-                            class="card-img-top"
-                            alt="Crispy Bengali Fish Pakoda">
-
-                        <span class="signature-badge">
-                            ★ Signature
-                        </span>
-
-                    </div>
-
-
-                    <div class="card-body">
-
-                        <h3 class="h5 fw-bold">
-                            Fish Pakoda
-                        </h3>
-
-                        <p class="text-muted">
-                            Crispy fish fritters with
-                            traditional Bengali flavours.
-                        </p>
-
-                        <strong class="menu-price">
-                            ₹199
-                        </strong>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-
-
-            <!-- 7 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <article class="card menu-card h-100 shadow-sm">
-
-                    <div class="position-relative">
-
-                        <img
-                            src="assets/nolen-gur-rosogolla.jpg"
-                            class="card-img-top"
-                            alt="Nolen Gur Er Rosogolla">
-
-                        <span class="signature-badge">
-                            ★ Signature
-                        </span>
-
-                    </div>
-
-
-                    <div class="card-body">
-
-                        <h3 class="h5 fw-bold">
-                            Nolen Gur Er Rosogolla
-                        </h3>
-
-                        <p class="text-muted">
-                            Soft rosogolla in rich seasonal
-                            nolen gur syrup.
-                        </p>
-
-                        <strong class="menu-price">
-                            ₹129
-                        </strong>
-
-                    </div>
-
-                </article>
+                </div>
 
             </div>
 
         </div>
 
+    </section>
 
 
-        <!-- FULL MENU -->
+    <!-- ================= MENU ================= -->
 
-        <div class="full-menu mt-5 pt-5">
+    <section id="menu" class="py-5 bg-light">
+
+        <div class="container">
 
             <div class="text-center mb-5">
 
-                <p class="text-uppercase fw-bold text-warning">
-                    Explore More
+                <span class="section-label">
+                    Our Food
+                </span>
+
+                <h2 class="fw-bold mt-2">
+                    Signature Items
+                </h2>
+
+                <p>
+                    Our specially selected dishes that represent
+                    the taste of Cafe Adda.
                 </p>
 
-                <h2 class="display-6 fw-bold">
+            </div>
+
+
+            <!-- SIGNATURE ITEMS -->
+
+            <div class="row g-4">
+
+                <!-- 1 -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card menu-card h-100 shadow-sm">
+
+                        <img src="assets/durga-puja-thali.jpg"
+                            class="card-img-top"
+                            alt="Durga Puja Special Thali">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-danger mb-2">
+                                Signature
+                            </span>
+
+                            <h5 class="card-title">
+                                Durga Puja Special Thali
+                            </h5>
+
+                            <p class="card-text">
+                                A festive Bengali thali filled with
+                                traditional flavours.
+                            </p>
+
+                            <strong>₹399</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 2 -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card menu-card h-100 shadow-sm">
+
+                        <img src="assets/chicken-saate.jpg"
+                            class="card-img-top"
+                            alt="Chicken Saate">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-danger mb-2">
+                                Signature
+                            </span>
+
+                            <h5 class="card-title">
+                                Chicken Saate
+                            </h5>
+
+                            <p class="card-text">
+                                Juicy grilled chicken with
+                                delicious Bengali-inspired flavours.
+                            </p>
+
+                            <strong>₹220</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 3 -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card menu-card h-100 shadow-sm">
+
+                        <img src="assets/doi-bora.jpg"
+                            class="card-img-top"
+                            alt="Doi Bora">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-danger mb-2">
+                                Signature
+                            </span>
+
+                            <h5 class="card-title">
+                                Doi Bora
+                            </h5>
+
+                            <p class="card-text">
+                                Soft lentil dumplings served with
+                                chilled creamy yoghurt.
+                            </p>
+
+                            <strong>₹140</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 4 -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card menu-card h-100 shadow-sm">
+
+                        <img src="assets/chicken-singara.jpg"
+                            class="card-img-top"
+                            alt="Chicken Singara">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-danger mb-2">
+                                Signature
+                            </span>
+
+                            <h5 class="card-title">
+                                Chicken Singara
+                            </h5>
+
+                            <p class="card-text">
+                                Crispy Bengali-style pastry filled
+                                with spicy chicken.
+                            </p>
+
+                            <strong>₹120</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 5 -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card menu-card h-100 shadow-sm">
+
+                        <img src="assets/chicken-kosha.jpg"
+                            class="card-img-top"
+                            alt="Bengali Chicken Kosha">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-danger mb-2">
+                                Signature
+                            </span>
+
+                            <h5 class="card-title">
+                                Chicken Kosha
+                            </h5>
+
+                            <p class="card-text">
+                                Slow-cooked Bengali chicken with
+                                rich aromatic spices.
+                            </p>
+
+                            <strong>₹260</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 6 -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card menu-card h-100 shadow-sm">
+
+                        <img src="assets/fish-pakoda.jpg"
+                            class="card-img-top"
+                            alt="Fish Pakoda">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-danger mb-2">
+                                Signature
+                            </span>
+
+                            <h5 class="card-title">
+                                Fish Pakoda
+                            </h5>
+
+                            <p class="card-text">
+                                Crispy fish fritters served hot
+                                with a tasty dip.
+                            </p>
+
+                            <strong>₹200</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 7 -->
+
+                <div class="col-md-6 col-lg-4 mx-md-auto">
+
+                    <div class="card menu-card h-100 shadow-sm">
+
+                        <img src="assets/nolen-gur-rosogolla.jpg"
+                            class="card-img-top"
+                            alt="Nolen Gur Rosogolla">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-danger mb-2">
+                                Signature
+                            </span>
+
+                            <h5 class="card-title">
+                                Nolen Gur Er Rosogolla
+                            </h5>
+
+                            <p class="card-text">
+                                Soft Bengali rosogolla sweetened
+                                with aromatic date-palm jaggery.
+                            </p>
+
+                            <strong>₹120</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FULL MENU -->
+
+            <div class="text-center mt-5 mb-4">
+
+                <h2 class="fw-bold">
                     Full Menu
                 </h2>
 
-                <p class="text-muted">
-                    From classic Bengali starters to hearty mains,
-                    rice dishes, desserts and refreshing beverages.
+                <p>
+                    Explore more dishes from Cafe Adda.
                 </p>
 
             </div>
@@ -742,419 +500,192 @@
 
             <div class="row g-4">
 
+                <!-- STARTERS -->
 
-                <!-- COLUMN 1 -->
+                <div class="col-md-6 col-lg-4">
 
-                <div class="col-lg-4">
+                    <div class="menu-list-box">
 
+                        <h4>Starters</h4>
 
-                    <div class="menu-category">
-
-                        <h3>
-                            <i class="bi bi-fire"></i>
-                            Starters
-                        </h3>
-
-                        <div class="menu-line">
-                            <span>Veg Singara</span>
-                            <strong>₹89</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Chicken Singara</span>
-                            <strong>₹129</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Fish Pakoda</span>
-                            <strong>₹199</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Chicken Saate</span>
-                            <strong>₹249</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Fish Fry</span>
-                            <strong>₹189</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Prawn Cutlet</span>
-                            <strong>₹229</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Paneer Pakoda</span>
-                            <strong>₹159</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Aloor Chop</span>
-                            <strong>₹69</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Beguni</span>
-                            <strong>₹69</strong>
-                        </div>
-
-                    </div>
-
-
-                    <div class="menu-category">
-
-                        <h3>
-                            <i class="bi bi-cup-hot"></i>
-                            Soups
-                        </h3>
-
-                        <div class="menu-line">
-                            <span>Tomato Soup</span>
-                            <strong>₹79</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Sweet Corn Soup</span>
-                            <strong>₹89</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Hot &amp; Sour Soup</span>
-                            <strong>₹89</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Chicken Clear Soup</span>
-                            <strong>₹99</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Lemon Coriander Soup</span>
-                            <strong>₹89</strong>
-                        </div>
-
-                    </div>
-
-
-                    <div class="menu-category">
-
-                        <h3>
-                            <i class="bi bi-leaf"></i>
-                            Salads &amp; Sides
-                        </h3>
-
-                        <div class="menu-line">
-                            <span>Green Salad</span>
-                            <strong>₹59</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Onion Salad</span>
-                            <strong>₹49</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Masala Papad</span>
-                            <strong>₹49</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Boondi Raita</span>
-                            <strong>₹69</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Mixed Raita</span>
-                            <strong>₹79</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Extra Rice</span>
-                            <strong>₹49</strong>
-                        </div>
+                        <ul>
+                            <li>Chicken Pakora — ₹180</li>
+                            <li>Fish Fry — ₹220</li>
+                            <li>Chicken Cutlet — ₹160</li>
+                            <li>Vegetable Chop — ₹100</li>
+                            <li>Chicken Spring Roll — ₹150</li>
+                            <li>Fish Finger — ₹200</li>
+                        </ul>
 
                     </div>
 
                 </div>
 
 
+                <!-- SOUPS -->
 
-                <!-- COLUMN 2 -->
+                <div class="col-md-6 col-lg-4">
 
-                <div class="col-lg-4">
+                    <div class="menu-list-box">
 
+                        <h4>Soups</h4>
 
-                    <div class="menu-category">
-
-                        <h3>
-                            <i class="bi bi-egg-fried"></i>
-                            Bengali Main Course
-                        </h3>
-
-                        <div class="menu-line">
-                            <span>Chicken Kosha</span>
-                            <strong>₹299</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Mutton Kosha</span>
-                            <strong>₹349</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Fish Curry (Rohu)</span>
-                            <strong>₹249</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Chingri Malai Curry</span>
-                            <strong>₹349</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Doi Maach (Rohu)</span>
-                            <strong>₹259</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Kosha Mangsho</span>
-                            <strong>₹349</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Aloo Posto</span>
-                            <strong>₹149</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Shukto</span>
-                            <strong>₹139</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Cholar Dal</span>
-                            <strong>₹129</strong>
-                        </div>
-
-                    </div>
-
-
-                    <div class="menu-category">
-
-                        <h3>
-                            <i class="bi bi-bowl-hot"></i>
-                            Rice &amp; Biryani
-                        </h3>
-
-                        <div class="menu-line">
-                            <span>Steamed Rice</span>
-                            <strong>₹49</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Basanti Pulao</span>
-                            <strong>₹159</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Jeera Rice</span>
-                            <strong>₹129</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Peas Pulao</span>
-                            <strong>₹149</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Chicken Biryani</span>
-                            <strong>₹249</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Mutton Biryani</span>
-                            <strong>₹299</strong>
-                        </div>
-
-                    </div>
-
-
-                    <div class="menu-category">
-
-                        <h3>
-                            <i class="bi bi-circle"></i>
-                            Breads
-                        </h3>
-
-                        <div class="menu-line">
-                            <span>Luchi (4 pcs)</span>
-                            <strong>₹89</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Kachuri (4 pcs)</span>
-                            <strong>₹99</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Tandoori Roti</span>
-                            <strong>₹49</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Butter Naan</span>
-                            <strong>₹69</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Garlic Naan</span>
-                            <strong>₹79</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Paratha</span>
-                            <strong>₹59</strong>
-                        </div>
+                        <ul>
+                            <li>Chicken Clear Soup — ₹130</li>
+                            <li>Hot & Sour Soup — ₹140</li>
+                            <li>Sweet Corn Soup — ₹130</li>
+                            <li>Vegetable Soup — ₹110</li>
+                            <li>Chicken Manchow Soup — ₹150</li>
+                        </ul>
 
                     </div>
 
                 </div>
 
 
+                <!-- SIDES -->
 
-                <!-- COLUMN 3 -->
+                <div class="col-md-6 col-lg-4">
 
-                <div class="col-lg-4">
+                    <div class="menu-list-box">
 
+                        <h4>Salads & Sides</h4>
 
-                    <div class="menu-category">
-
-                        <h3>
-                            <i class="bi bi-basket2"></i>
-                            Rice Combos
-                        </h3>
-
-                        <div class="menu-line">
-                            <span>Veg Rice Combo</span>
-                            <strong>₹189</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Chicken Rice Combo</span>
-                            <strong>₹249</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Fish Rice Combo</span>
-                            <strong>₹249</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Mutton Rice Combo</span>
-                            <strong>₹299</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Prawn Rice Combo</span>
-                            <strong>₹299</strong>
-                        </div>
+                        <ul>
+                            <li>Green Salad — ₹80</li>
+                            <li>Cucumber Salad — ₹70</li>
+                            <li>French Fries — ₹100</li>
+                            <li>Masala Fries — ₹120</li>
+                            <li>Raita — ₹90</li>
+                        </ul>
 
                     </div>
 
+                </div>
 
-                    <div class="menu-category">
 
-                        <h3>
-                            <i class="bi bi-cake2"></i>
-                            Desserts
-                        </h3>
+                <!-- BENGALI MAIN -->
 
-                        <div class="menu-line">
-                            <span>Nolen Gur Er Rosogolla</span>
-                            <strong>₹129</strong>
-                        </div>
+                <div class="col-md-6 col-lg-4">
 
-                        <div class="menu-line">
-                            <span>Mishti Doi</span>
-                            <strong>₹99</strong>
-                        </div>
+                    <div class="menu-list-box">
 
-                        <div class="menu-line">
-                            <span>Sandesh</span>
-                            <strong>₹99</strong>
-                        </div>
+                        <h4>Bengali Main Course</h4>
 
-                        <div class="menu-line">
-                            <span>Rosogolla</span>
-                            <strong>₹89</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Nolen Gur Ice Cream</span>
-                            <strong>₹129</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Baked Rosogolla</span>
-                            <strong>₹129</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Gulab Jamun</span>
-                            <strong>₹89</strong>
-                        </div>
-
-                        <div class="menu-line">
-                            <span>Kheer</span>
-                            <strong>₹99</strong>
-                        </div>
+                        <ul>
+                            <li>Chicken Curry — ₹230</li>
+                            <li>Mutton Kosha — ₹320</li>
+                            <li>Chicken Rezala — ₹280</li>
+                            <li>Fish Curry — ₹250</li>
+                            <li>Doi Maach — ₹260</li>
+                            <li>Chingri Malai Curry — ₹350</li>
+                        </ul>
 
                     </div>
 
+                </div>
 
-                    <div class="menu-category">
 
-                        <h3>
-                            <i class="bi bi-cup-straw"></i>
-                            Beverages
-                        </h3>
+                <!-- RICE -->
 
-                        <div class="menu-line">
-                            <span>Masala Chai</span>
-                            <strong>₹49</strong>
-                        </div>
+                <div class="col-md-6 col-lg-4">
 
-                        <div class="menu-line">
-                            <span>Green Tea</span>
-                            <strong>₹49</strong>
-                        </div>
+                    <div class="menu-list-box">
 
-                        <div class="menu-line">
-                            <span>Cold Coffee</span>
-                            <strong>₹99</strong>
-                        </div>
+                        <h4>Rice & Biryani</h4>
 
-                        <div class="menu-line">
-                            <span>Lassi</span>
-                            <strong>₹79</strong>
-                        </div>
+                        <ul>
+                            <li>Steamed Rice — ₹100</li>
+                            <li>Jeera Rice — ₹130</li>
+                            <li>Chicken Biryani — ₹250</li>
+                            <li>Mutton Biryani — ₹320</li>
+                            <li>Egg Biryani — ₹180</li>
+                            <li>Vegetable Pulao — ₹160</li>
+                        </ul>
 
-                        <div class="menu-line">
-                            <span>Fresh Lime Soda</span>
-                            <strong>₹69</strong>
-                        </div>
+                    </div>
 
-                        <div class="menu-line">
-                            <span>Soft Drink</span>
-                            <strong>₹49</strong>
-                        </div>
+                </div>
 
-                        <div class="menu-line">
-                            <span>Bottled Water</span>
-                            <strong>₹29</strong>
-                        </div>
+
+                <!-- BREADS -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="menu-list-box">
+
+                        <h4>Breads</h4>
+
+                        <ul>
+                            <li>Luchi — ₹70</li>
+                            <li>Plain Roti — ₹20</li>
+                            <li>Butter Roti — ₹30</li>
+                            <li>Naan — ₹50</li>
+                            <li>Butter Naan — ₹60</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COMBOS -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="menu-list-box">
+
+                        <h4>Rice Combos</h4>
+
+                        <ul>
+                            <li>Chicken Rice Combo — ₹280</li>
+                            <li>Fish Rice Combo — ₹300</li>
+                            <li>Mutton Rice Combo — ₹350</li>
+                            <li>Bengali Veg Combo — ₹220</li>
+                            <li>Special Adda Combo — ₹399</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DESSERT -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="menu-list-box">
+
+                        <h4>Desserts</h4>
+
+                        <ul>
+                            <li>Mishti Doi — ₹90</li>
+                            <li>Rosogolla — ₹80</li>
+                            <li>Sandesh — ₹100</li>
+                            <li>Payesh — ₹100</li>
+                            <li>Gulab Jamun — ₹80</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BEVERAGES -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="menu-list-box">
+
+                        <h4>Beverages</h4>
+
+                        <ul>
+                            <li>Bengali Milk Tea — ₹50</li>
+                            <li>Masala Tea — ₹60</li>
+                            <li>Cold Coffee — ₹120</li>
+                            <li>Fresh Lime Soda — ₹90</li>
+                            <li>Mango Lassi — ₹110</li>
+                        </ul>
 
                     </div>
 
@@ -1164,554 +695,304 @@
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
+    <!-- ================= GALLERY ================= -->
 
-<!-- ==================================================
-     GALLERY
-================================================== -->
+    <section id="gallery" class="py-5">
 
-<section id="gallery" class="py-5">
+        <div class="container">
 
-    <div class="container">
+            <div class="text-center mb-5">
 
-        <div class="text-center mb-5">
+                <span class="section-label">
+                    Gallery
+                </span>
 
-            <p class="text-uppercase fw-bold text-warning">
-                Gallery
-            </p>
-
-            <h2 class="display-6 fw-bold">
-                A Taste of Cafe Adda
-            </h2>
-
-            <p class="text-muted">
-                Explore some of our favourite dishes.
-            </p>
-
-        </div>
-
-
-        <div class="row g-3">
-
-
-            <div class="col-md-4">
-
-                <button
-                    class="gallery-btn border-0 p-0 w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target="#galleryModal"
-                    data-gallery-image="assets/durga-puja-thali.jpg"
-                    aria-label="View Durga Puja Thali">
-
-                    <img
-                        src="assets/durga-puja-thali.jpg"
-                        class="img-fluid rounded-3 gallery-image"
-                        alt="Bengali Durga Puja Thali">
-
-                </button>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <button
-                    class="gallery-btn border-0 p-0 w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target="#galleryModal"
-                    data-gallery-image="assets/chicken-saate.jpg"
-                    aria-label="View Chicken Saate">
-
-                    <img
-                        src="assets/chicken-saate.jpg"
-                        class="img-fluid rounded-3 gallery-image"
-                        alt="Chicken Saate">
-
-                </button>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <button
-                    class="gallery-btn border-0 p-0 w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target="#galleryModal"
-                    data-gallery-image="assets/doi-bora.jpg"
-                    aria-label="View Doi Bora">
-
-                    <img
-                        src="assets/doi-bora.jpg"
-                        class="img-fluid rounded-3 gallery-image"
-                        alt="Doi Bora">
-
-                </button>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <button
-                    class="gallery-btn border-0 p-0 w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target="#galleryModal"
-                    data-gallery-image="assets/chicken-singara.jpg"
-                    aria-label="View Chicken Singara">
-
-                    <img
-                        src="assets/chicken-singara.jpg"
-                        class="img-fluid rounded-3 gallery-image"
-                        alt="Chicken Singara">
-
-                </button>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <button
-                    class="gallery-btn border-0 p-0 w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target="#galleryModal"
-                    data-gallery-image="assets/chicken-kosha.jpg"
-                    aria-label="View Chicken Kosha">
-
-                    <img
-                        src="assets/chicken-kosha.jpg"
-                        class="img-fluid rounded-3 gallery-image"
-                        alt="Bengali Chicken Kosha">
-
-                </button>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <button
-                    class="gallery-btn border-0 p-0 w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target="#galleryModal"
-                    data-gallery-image="assets/nolen-gur-rosogolla.jpg"
-                    aria-label="View Nolen Gur Rosogolla">
-
-                    <img
-                        src="assets/nolen-gur-rosogolla.jpg"
-                        class="img-fluid rounded-3 gallery-image"
-                        alt="Nolen Gur Er Rosogolla">
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     GALLERY MODAL
-================================================== -->
-
-<div
-    class="modal fade"
-    id="galleryModal"
-    tabindex="-1"
-    aria-labelledby="galleryModalLabel"
-    aria-hidden="true">
-
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-
-        <div class="modal-content bg-dark">
-
-            <div class="modal-header border-0">
-
-                <h2
-                    class="modal-title text-white h5"
-                    id="galleryModalLabel">
-
-                    Cafe Adda Gallery
-
+                <h2 class="fw-bold mt-2">
+                    A Glimpse of Cafe Adda
                 </h2>
 
+            </div>
 
-                <button
+            <div class="row g-3">
+
+                <div class="col-6 col-md-4">
+                    <img src="assets/durga-puja-thali.jpg"
+                        class="img-fluid gallery-img"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                        alt="Bengali Thali">
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <img src="assets/chicken-kosha.jpg"
+                        class="img-fluid gallery-img"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                        alt="Chicken Kosha">
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <img src="assets/fish-pakoda.jpg"
+                        class="img-fluid gallery-img"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                        alt="Fish Pakoda">
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <img src="assets/doi-bora.jpg"
+                        class="img-fluid gallery-img"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                        alt="Doi Bora">
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <img src="assets/chicken-saate.jpg"
+                        class="img-fluid gallery-img"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                        alt="Chicken Saate">
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <img src="assets/nolen-gur-rosogolla.jpg"
+                        class="img-fluid gallery-img"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                        alt="Nolen Gur Rosogolla">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY MODAL ================= -->
+
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+
+            <div class="modal-content bg-dark">
+
+                <div class="modal-header border-0">
+
+                    <button type="button"
+                        class="btn-close btn-close-white ms-auto"
+                        data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img id="modalImage"
+                        src=""
+                        class="img-fluid rounded"
+                        alt="Gallery preview">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section id="reviews" class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-label">
+                    Reviews
+                </span>
+
+                <h2 class="fw-bold mt-2">
+                    What Our Guests Say
+                </h2>
+
+            </div>
+
+
+            <div id="reviewCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <div class="review-box text-center mx-auto">
+
+                            <p class="lead">
+                                "The food tasted authentic and
+                                the service was excellent."
+                            </p>
+
+                            <h5>
+                                — Arjun
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <div class="review-box text-center mx-auto">
+
+                            <p class="lead">
+                                "Chicken Kosha and Rosogolla
+                                were absolutely delicious."
+                            </p>
+
+                            <h5>
+                                — Riya
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <div class="review-box text-center mx-auto">
+
+                            <p class="lead">
+                                "A beautiful place to enjoy
+                                Bengali food with family."
+                            </p>
+
+                            <h5>
+                                — Souvik
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="carousel-control-prev"
                     type="button"
-                    class="btn-close btn-close-white"
-                    data-bs-dismiss="modal"
-                    aria-label="Close">
+                    data-bs-target="#reviewCarousel"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                </button>
+
+
+                <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#reviewCarousel"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
                 </button>
 
             </div>
 
-
-            <div class="modal-body text-center">
-
-                <img
-                    id="galleryModalImage"
-                    src=""
-                    class="img-fluid rounded"
-                    alt="Selected Cafe Adda food">
-
-            </div>
-
         </div>
 
-    </div>
-
-</div>
+    </section>
 
 
+    <!-- ================= CONTACT ================= -->
 
-<!-- ==================================================
-     TESTIMONIALS
-================================================== -->
+    <section id="contact" class="py-5">
 
-<section id="reviews" class="py-5 bg-light">
+        <div class="container">
 
-    <div class="container">
+            <div class="text-center mb-5">
 
-        <div class="text-center mb-5">
+                <span class="section-label">
+                    Contact
+                </span>
 
-            <p class="text-uppercase fw-bold text-warning">
-                Customer Reviews
-            </p>
-
-            <h2 class="display-6 fw-bold">
-                What Our Guests Say
-            </h2>
-
-        </div>
-
-
-        <div
-            id="testimonialCarousel"
-            class="carousel slide"
-            data-bs-ride="carousel">
-
-
-            <div class="carousel-inner">
-
-
-                <div class="carousel-item active">
-
-                    <div class="row justify-content-center">
-
-                        <div class="col-lg-8">
-
-                            <div class="card border-0 shadow-sm text-center p-5">
-
-                                <div class="mb-3 text-warning fs-3">
-                                    ★★★★★
-                                </div>
-
-                                <p class="lead">
-                                    “The Chicken Kosha was absolutely
-                                    delicious. It tasted just like
-                                    authentic Bengali home cooking.”
-                                </p>
-
-                                <h3 class="h6 fw-bold">
-                                    — Arjun S.
-                                </h3>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="carousel-item">
-
-                    <div class="row justify-content-center">
-
-                        <div class="col-lg-8">
-
-                            <div class="card border-0 shadow-sm text-center p-5">
-
-                                <div class="mb-3 text-warning fs-3">
-                                    ★★★★★
-                                </div>
-
-                                <p class="lead">
-                                    “Loved the festive thali and
-                                    Nolen Gur Rosogolla. Perfect
-                                    place for Bengali food lovers.”
-                                </p>
-
-                                <h3 class="h6 fw-bold">
-                                    — Sneha M.
-                                </h3>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="carousel-item">
-
-                    <div class="row justify-content-center">
-
-                        <div class="col-lg-8">
-
-                            <div class="card border-0 shadow-sm text-center p-5">
-
-                                <div class="mb-3 text-warning fs-3">
-                                    ★★★★★
-                                </div>
-
-                                <p class="lead">
-                                    “Great food, warm atmosphere
-                                    and a lovely place to spend
-                                    time with family.”
-                                </p>
-
-                                <h3 class="h6 fw-bold">
-                                    — Rahul D.
-                                </h3>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
+                <h2 class="fw-bold mt-2">
+                    Reserve Your Table
+                </h2>
 
             </div>
 
 
-            <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#testimonialCarousel"
-                data-bs-slide="prev">
+            <div class="row g-5">
 
-                <span
-                    class="carousel-control-prev-icon bg-dark rounded-circle">
-                </span>
+                <!-- CONTACT INFO -->
 
-                <span class="visually-hidden">
-                    Previous
-                </span>
+                <div class="col-lg-5">
 
-            </button>
+                    <h4 class="fw-bold">
+                        Cafe Adda
+                    </h4>
 
-
-            <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#testimonialCarousel"
-                data-bs-slide="next">
-
-                <span
-                    class="carousel-control-next-icon bg-dark rounded-circle">
-                </span>
-
-                <span class="visually-hidden">
-                    Next
-                </span>
-
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     CONTACT
-================================================== -->
-
-<section id="contact" class="py-5">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <p class="text-uppercase fw-bold text-warning">
-                Contact &amp; Location
-            </p>
-
-            <h2 class="display-6 fw-bold">
-                Come Have an Adda With Us
-            </h2>
-
-        </div>
-
-
-        <div class="row g-5">
-
-
-            <!-- INFO -->
-
-            <div class="col-lg-5">
-
-                <h3 class="h4 fw-bold mb-4">
-                    Cafe Adda
-                </h3>
-
-
-                <div class="d-flex mb-4">
-
-                    <div class="fs-4 text-warning me-3">
+                    <p>
                         <i class="bi bi-geo-alt-fill"></i>
-                    </div>
+                        Pahalanpur, Bardhaman,
+                        West Bengal – 713427
+                    </p>
 
-                    <div>
-
-                        <h4 class="h6 fw-bold">
-                            Address
-                        </h4>
-
-                        <p class="mb-0">
-                            Pahalanpur, Bardhaman,<br>
-                            West Bengal – 713427
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="d-flex mb-4">
-
-                    <div class="fs-4 text-warning me-3">
+                    <p>
                         <i class="bi bi-telephone-fill"></i>
-                    </div>
+                        999999999
+                    </p>
 
-                    <div>
-
-                        <h4 class="h6 fw-bold">
-                            Phone
-                        </h4>
-
-                        <a
-                            href="tel:999999999"
-                            class="text-decoration-none">
-
-                            999999999
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="d-flex mb-4">
-
-                    <div class="fs-4 text-warning me-3">
+                    <p>
                         <i class="bi bi-envelope-fill"></i>
-                    </div>
+                        cafe.adda@gmail.com
+                    </p>
 
-                    <div>
 
-                        <h4 class="h6 fw-bold">
-                            Email
-                        </h4>
+                    <h5 class="mt-4">
+                        Opening Hours
+                    </h5>
 
-                        <a
-                            href="mailto:cafe.adda@gmail.com"
-                            class="text-decoration-none">
-
-                            cafe.adda@gmail.com
-
-                        </a>
-
-                    </div>
+                    <p>
+                        Monday – Sunday<br>
+                        11:00 AM – 10:30 PM
+                    </p>
 
                 </div>
 
 
-                <h3 class="h5 fw-bold mt-5 mb-3">
-                    Opening Hours
-                </h3>
+                <!-- FORM -->
 
-
-                <ul class="list-unstyled">
-
-                    <li class="d-flex justify-content-between border-bottom py-2">
-                        <span>Monday – Friday</span>
-                        <strong>11 AM – 10 PM</strong>
-                    </li>
-
-                    <li class="d-flex justify-content-between border-bottom py-2">
-                        <span>Saturday</span>
-                        <strong>11 AM – 11 PM</strong>
-                    </li>
-
-                    <li class="d-flex justify-content-between py-2">
-                        <span>Sunday</span>
-                        <strong>11 AM – 10 PM</strong>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-
-            <!-- FORM -->
-
-            <div class="col-lg-7">
-
-                <div class="card border-0 shadow-sm p-4 p-md-5">
-
-                    <h3 class="h4 fw-bold mb-4">
-                        Reserve a Table
-                    </h3>
-
+                <div class="col-lg-7">
 
                     <form id="bookingForm" novalidate>
 
-
                         <div class="mb-3">
 
-                            <label
-                                for="fullName"
-                                class="form-label fw-semibold">
-
-                                Full Name
-
+                            <label for="name"
+                                class="form-label">
+                                Name
                             </label>
 
-
-                            <input
-                                type="text"
+                            <input type="text"
                                 class="form-control"
-                                id="fullName"
-                                name="fullName"
+                                id="name"
                                 minlength="2"
                                 maxlength="50"
                                 required>
 
-
                             <div class="invalid-feedback">
-
-                                Please enter your name between
-                                2 and 50 characters.
-
+                                Please enter your name.
                             </div>
 
                         </div>
@@ -1719,28 +1000,39 @@
 
                         <div class="mb-3">
 
-                            <label
-                                for="email"
-                                class="form-label fw-semibold">
-
-                                Email Address
-
+                            <label for="email"
+                                class="form-label">
+                                Email
                             </label>
 
-
-                            <input
-                                type="email"
+                            <input type="email"
                                 class="form-control"
                                 id="email"
-                                name="email"
-                                maxlength="100"
                                 required>
 
+                            <div class="invalid-feedback">
+                                Please enter a valid email.
+                            </div>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label for="phone"
+                                class="form-label">
+                                Phone
+                            </label>
+
+                            <input type="tel"
+                                class="form-control"
+                                id="phone"
+                                minlength="10"
+                                maxlength="15"
+                                required>
 
                             <div class="invalid-feedback">
-
-                                Please enter a valid email address.
-
+                                Please enter a valid phone number.
                             </div>
 
                         </div>
@@ -1748,32 +1040,20 @@
 
                         <div class="row">
 
-
                             <div class="col-md-6 mb-3">
 
-                                <label
-                                    for="guests"
-                                    class="form-label fw-semibold">
-
-                                    Number of Guests
-
+                                <label for="date"
+                                    class="form-label">
+                                    Date
                                 </label>
 
-
-                                <input
-                                    type="number"
+                                <input type="date"
                                     class="form-control"
-                                    id="guests"
-                                    name="guests"
-                                    min="1"
-                                    max="20"
+                                    id="date"
                                     required>
 
-
                                 <div class="invalid-feedback">
-
-                                    Please select 1–20 guests.
-
+                                    Please select a date.
                                 </div>
 
                             </div>
@@ -1781,27 +1061,30 @@
 
                             <div class="col-md-6 mb-3">
 
-                                <label
-                                    for="date"
-                                    class="form-label fw-semibold">
-
-                                    Date
-
+                                <label for="guests"
+                                    class="form-label">
+                                    Guests
                                 </label>
 
-
-                                <input
-                                    type="date"
-                                    class="form-control"
-                                    id="date"
-                                    name="date"
+                                <select id="guests"
+                                    class="form-select"
                                     required>
 
+                                    <option value="">
+                                        Select
+                                    </option>
+
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6+</option>
+
+                                </select>
 
                                 <div class="invalid-feedback">
-
-                                    Please select a date.
-
+                                    Please select number of guests.
                                 </div>
 
                             </div>
@@ -1811,52 +1094,31 @@
 
                         <div class="mb-3">
 
-                            <label
-                                for="message"
-                                class="form-label fw-semibold">
-
+                            <label for="message"
+                                class="form-label">
                                 Message
-
                             </label>
 
-
-                            <textarea
-                                id="message"
-                                name="message"
+                            <textarea id="message"
                                 class="form-control"
-                                rows="5"
+                                rows="4"
                                 minlength="10"
-                                maxlength="300"
+                                maxlength="500"
                                 required></textarea>
 
-
                             <div class="invalid-feedback">
-
-                                Message must be between
-                                10 and 300 characters.
-
+                                Please enter at least 10 characters.
                             </div>
 
                         </div>
 
 
-                        <button
-                            type="submit"
-                            class="btn btn-warning btn-lg w-100">
+                        <button type="submit"
+                            class="btn btn-warning">
 
-                            <i class="bi bi-send-fill me-2"></i>
-
-                            Send Reservation Request
+                            Reserve Table
 
                         </button>
-
-
-                        <div
-                            id="formMessage"
-                            class="mt-3"
-                            role="alert"
-                            aria-live="polite">
-                        </div>
 
                     </form>
 
@@ -1864,24 +1126,16 @@
 
             </div>
 
-        </div>
 
+            <!-- GOOGLE MAP -->
 
-
-        <!-- GOOGLE MAP -->
-
-        <div class="mt-5">
-
-            <h3 class="h4 fw-bold mb-3">
-                Find Us
-            </h3>
-
-
-            <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+            <div class="mt-5">
 
                 <iframe
-                    src="https://www.google.com/maps?q=Pahalanpur,+Bardhaman,+West+Bengal+713427&output=embed"
-                    title="Google Map showing Cafe Adda location"
+                    src="https://www.google.com/maps?q=Pahalanpur,Bardhaman,West+Bengal&output=embed"
+                    width="100%"
+                    height="350"
+                    style="border:0;"
                     loading="lazy"
                     allowfullscreen>
                 </iframe>
@@ -1890,138 +1144,75 @@
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
+    <!-- ================= FOOTER ================= -->
 
-<!-- ==================================================
-     FOOTER
-================================================== -->
+    <footer class="bg-dark text-white py-4">
 
-<footer class="bg-dark text-white py-5">
+        <div class="container">
 
-    <div class="container">
+            <div class="row align-items-center">
 
-        <div class="row g-4">
+                <div class="col-md-6 text-center text-md-start">
 
+                    <h5>
+                        Cafe Adda
+                    </h5>
 
-            <div class="col-lg-5">
+                    <p class="mb-0">
+                        Taste of Bengal, served with love.
+                    </p>
 
-                <h2 class="h4 fw-bold">
-
-                    <i class="bi bi-cup-hot-fill me-2"></i>
-
-                    Cafe Adda
-
-                </h2>
+                </div>
 
 
-                <p class="text-white-50">
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
 
-                    Authentic Bengali flavours,
-                    traditional recipes and good adda.
-
-                </p>
-
-            </div>
-
-
-            <div class="col-lg-3">
-
-                <h3 class="h6 fw-bold">
-                    Opening Hours
-                </h3>
-
-                <p class="text-white-50 mb-1">
-                    Mon – Fri: 11 AM – 10 PM
-                </p>
-
-                <p class="text-white-50 mb-1">
-                    Saturday: 11 AM – 11 PM
-                </p>
-
-                <p class="text-white-50">
-                    Sunday: 11 AM – 10 PM
-                </p>
-
-            </div>
-
-
-            <div class="col-lg-4">
-
-                <h3 class="h6 fw-bold">
-                    Follow Us
-                </h3>
-
-
-                <div class="d-flex gap-3 fs-4">
-
-                    <a
-                        href="#"
-                        class="text-white"
-                        aria-label="Instagram">
-
-                        <i class="bi bi-instagram"></i>
-
-                    </a>
-
-
-                    <a
-                        href="#"
-                        class="text-white"
-                        aria-label="Facebook">
-
+                    <a href="#"
+                        class="text-white fs-4 me-3">
                         <i class="bi bi-facebook"></i>
-
                     </a>
 
+                    <a href="#"
+                        class="text-white fs-4 me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
 
-                    <a
-                        href="#"
-                        class="text-white"
-                        aria-label="Twitter">
-
-                        <i class="bi bi-twitter-x"></i>
-
+                    <a href="#"
+                        class="text-white fs-4">
+                        <i class="bi bi-whatsapp"></i>
                     </a>
 
                 </div>
 
             </div>
 
+
+            <hr>
+
+
+            <div class="text-center">
+
+                <small>
+                    © <span id="currentYear"></span>
+                    Cafe Adda. All Rights Reserved.
+                </small>
+
+            </div>
+
         </div>
 
-
-        <hr class="border-secondary my-4">
-
-
-        <div class="text-center text-white-50">
-
-            <small>
-                © 2026 Cafe Adda. All rights reserved.
-            </small>
-
-        </div>
-
-    </div>
-
-</footer>
+    </footer>
 
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 
-<!-- BOOTSTRAP JS -->
-
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-
-<!-- CUSTOM JS -->
-
-<script src="js/main.js"></script>
-
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
 
 </body>
 
